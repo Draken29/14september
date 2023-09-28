@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>58</title>
+    <style>
+        article{
+            height: 310px;
+            width: 38%;
+            background-color: rgb(190, 201, 201);
+            text-align: center;
+            border: 2px solid black;
+        }
+        article h1{
+            background-color: burlywood;
+            border: 2px double grey ;
+            padding: 20px;
+        }
+        article img{
+            width: 100%;
+        }
+        h1:hover{
+            animation-name: changecolor;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in-out;
+
+
+        }
+        @keyframes changecolor{
+            from{
+              background-color: burlywood;
+            }
+            to{
+                background-color: brown;
+                color: white;
+            }
+        }
+        @keyframes changecolor{
+            0%{
+              border: 2px solid black;
+              padding: 20px;
+            }
+            10%{
+              background-color: red;
+              height: 20px;
+            }
+            50%{
+              background-color: green;
+            }
+            100%{
+            background-color: orangered;
+            }
+        }
+        img:hover{
+            animation-name: fl;
+            animation-duration: 2s;
+        }
+        @-webkit-keyframes fl{0%{-webkit-transform:translateY(0) rotateX(0);transform:translateY(0) rotateX(0);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:translateY(-100%) rotateX(-180deg);transform:translateY(-100%) rotateX(-180deg);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}}@keyframes flip-2-hor-top-1{0%{-webkit-transform:translateY(0) rotateX(0);transform:translateY(0) rotateX(0);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:translateY(-100%) rotateX(-180deg);transform:translateY(-100%) rotateX(-180deg);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}}
+    </style>
+</head>
+<body>
+    <article>
+        <img src="draken.jpg"/>
+        <h1>hello</h1>
+    </article>
+</body>
+</html>
